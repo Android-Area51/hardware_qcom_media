@@ -27,6 +27,7 @@
 #--------------------------------------------------------------------------
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
 
 #OMXCORE_CFLAGS := -g -O3 -DVERBOSE
 #OMXCORE_CFLAGS += -O0 -fno-inline -fno-short-enums
