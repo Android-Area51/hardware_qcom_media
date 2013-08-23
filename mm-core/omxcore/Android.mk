@@ -27,7 +27,6 @@
 #--------------------------------------------------------------------------
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
 
 #OMXCORE_CFLAGS := -g -O3 -DVERBOSE
 #OMXCORE_CFLAGS += -O0 -fno-inline -fno-short-enums
@@ -71,6 +70,7 @@ LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
 LOCAL_MODULE            := libOmxCore
 LOCAL_SHARED_LIBRARIES  := liblog libdl
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
@@ -89,6 +89,7 @@ LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
 LOCAL_MODULE            := libmm-omxcore
 LOCAL_SHARED_LIBRARIES  := liblog libdl
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
